@@ -1,29 +1,20 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
-
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-});
+import type { Metadata } from 'next'
+import { GeistSans } from 'geist/font/sans'
+import './globals.css'
 
 export const metadata: Metadata = {
-  title: "OffLegacy",
-  description: "Open-source Development Team in South Korea 🇰🇷",
-};
+  title: 'OffLegacy',
+  description: 'Open-source Development Team in South Korea 🇰🇷',
+}
 
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>{children}</body>
+      <body className={`${GeistSans.className} bg-black text-white`}>{children}</body>
     </html>
-  );
+  )
 }
