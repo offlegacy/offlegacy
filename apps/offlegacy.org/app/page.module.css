@@ -1,0 +1,24 @@
+.page {
+  display: grid;
+  grid-template-rows: 20px 1fr 20px;
+  align-items: center;
+  justify-items: center;
+  min-height: 100svh;
+  padding: 80px;
+  gap: 64px;
+  font-synthesis: none;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  grid-row-start: 2;
+}
+
+.title {
+  text-align: center;
+}
+
+.logo {
+  filter: drop-shadow(0px 0px 10px gray);
+}
