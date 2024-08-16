@@ -1,7 +1,7 @@
 {
   "name": "offlegacy",
   "private": true,
-  "packageManager": "pnpm@8.15.6",
+  "packageManager": "pnpm@9.7.1",
   "type": "module",
   "scripts": {
     "build": "turbo build",
