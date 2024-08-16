@@ -1,5 +1,5 @@
 import PackageCard from './components/package-card'
-import Page from './components/page'
+import Page from './components/page-layout'
 import AboutTeamCard from './components/about-team-card'
 
 export default function Home() {
